@@ -10,9 +10,15 @@ img {
   vertical-align: bottom;
 }
 
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
 .body {
   background-color: #f2f2f2;
   color: #333;
+  font-family: 'Raleway', sans-serif;
 }
 
 .header {
@@ -30,21 +36,17 @@ img {
   box-sizing: border-box;
 }
 
-.header__logo {
+.header-inner__logo {
   float: left;
+  color: #333;
 }
 
-.fa-bolt {
-  color: #4e4e4e;
-}
-
-.header__contact-btn {
+.header-inner__contact-btn {
   float: right;
   padding: 14px 12px;
   background-color:	#74cfae;
   color: #fff;
   font-size: 12px;
-  text-decoration: none;
   transition: 0.3s;
 }
 
@@ -53,12 +55,15 @@ img {
   background-color: #4e4e4e;
 }
 
+.main {
+  margin-top: 94px;
+}
+
 .title-inner {
   width: 1100px;
   margin: 0 auto;
   padding: 250px 0;
   box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
   text-align: center;
 }
 
@@ -93,19 +98,19 @@ img {
 
 .service-about {
   float: right;
-  width: 750px;
+  width: 650px;
   text-align: center;
-  line-height: 2em;
+  line-height: 1.8em;
 }
 
 .service-about__heading {
   margin-bottom: 35px;
   font-size: 24px;
-  font-family: 'Raleway', sans-serif;
 }
 
 .service-about__summary {
   font-size: 20px;
+  font-family: 'Lato', sans-serif;
 }
 
 .works-inner {
@@ -118,11 +123,10 @@ img {
 
 .works-heading {
   font-size: 24px;
-  font-family: 'Raleway', sans-serif;
 }
 
 .works-wrapper {
-  padding: 40px 0 90px 0;
+  margin-top: 40px;
   box-sizing: border-box;
 }
 
@@ -146,16 +150,17 @@ img {
 }
 
 .work-request {
-  width: 900px;
-  margin: 0 auto;
+  width: 770px;
+  margin: 90px auto 0;
   text-align: center;
 }
 
 .work-request__summary {
   float: left;
-  width: 670px;
-  line-height: 1.5em;
+  width: 580px;
+  line-height: 1.8em;
   font-size: 20px;
+  font-family: 'Lato', sans-serif;
 }
 
 .work-request__email-btn {
@@ -165,7 +170,6 @@ img {
   background-color: #74cfae;
   color: #fff;
   font-size: 12px;
-  text-decoration: none;
   transition: 0.3s;
 }
 
@@ -214,11 +218,11 @@ img {
   text-align: center;
 }
 
-.sns-nav {
+.sns-nav-inner {
   letter-spacing: -1em;
 }
 
-.sns-nav__btn {
+.sns-nav-inner__btn {
   display: inline-block;
   width: 185px;
   padding: 20px;
@@ -227,22 +231,23 @@ img {
   transition: 0.3s;
 }
 
-.sns-nav__btn:hover {
+.sns-nav-inner__btn:hover {
   background-color: #fff;
 }
 
 .footer {
-  padding: 20px 0 25px;
   background-color: #74cfae;
 }
 
 .footer-inner {
   width: 1100px;
   margin: 0 auto;
+  padding: 20px 0 25px;
+  box-sizing: border-box;
+  text-align: right;
 }
 
 .footer-inner__copyright {
-  float: right;
   color: #fff;
 }
 
