@@ -76,7 +76,7 @@ a {
   transition: 0.3s;
 }
 
-.header__contact-btn:hover {
+.header-inner__contact-btn:hover {
   color: #74cfae;
   background-color: #4e4e4e;
 }
