@@ -15,7 +15,7 @@ a {
   text-decoration: none;
 }
 
-.wrapper {
+.inner {
   width: 1100px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -43,6 +43,28 @@ a {
 .header-inner__logo {
   float: left;
   color: #333;
+}
+
+.nav-toggle {
+  display: none;
+  float: right;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.nav-toggle__bar:after {
+  display: block;
+  content: "";
+  width: 30px;
+  height: 3px;
+  margin-top: 5px;
+  background-color: #4e4e4e;
+}
+
+.nav-toggle__bar:first-child:after {
+  margin-top: 0;
 }
 
 .header-inner__contact-btn {
@@ -218,7 +240,6 @@ a {
 }
 
 .sns-nav-inner__btn {
-  display: inline-block;
   width: 185px;
   padding: 20px;
   color: #74cfae;
@@ -243,4 +264,112 @@ a {
   color: #fff;
 }
 
+@media screen and (max-width: 1199px) {
 
+  .inner {
+    width: 97%;
+  }
+
+  .service-inner {
+    padding: 50px 0 25px 0;
+    text-align: center;
+  }
+
+  .service-image {
+    float: none;
+    margin: 0 auto;
+
+  }
+
+  .service-about {
+    float: none;
+    margin: 20px auto 0;
+  }
+
+  .works-wrapper__work {
+    float: none;
+    margin: 0;
+  }
+  
+  .works-wrapper__work:nth-child(3n+1) {
+    margin-top: 80px; 
+  }
+
+  .work-request {
+    margin-top: 80px;
+  }
+
+  .work-request__summary {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .work-request__email-btn {
+    float: none;
+    margin: 40px auto 0;
+  }
+
+  .skills-list {
+    float: none;
+    margin: 88px 0 0;
+  }
+
+  .skills-list:first-child {
+    margin-top: 0;
+  }
+
+}
+
+@media screen and (max-width: 766px) {
+
+  .header-inner {
+    position: relative;
+  }
+
+  .nav-toggle {
+    display: inline-block;
+  }
+
+  .header-inner__contact-btn {
+    display: none;
+  }
+
+  .nav-toggle.active + .header-inner__contact-btn {
+    display: block;
+    position: absolute;
+    bottom: -40px;
+    left: -8px;
+    width: 100vw;
+    float: none;
+  }
+
+  .title-inner {
+    padding: 160px 0 130px;
+  }
+
+  .title-inner__main-title {
+    font-size: 80px;
+  }
+
+  .service-about {
+    width: auto;
+  }
+
+  .work-request {
+    width: auto;
+  }
+
+  .work-request__summary {
+    width: auto;
+  }
+
+  .sns-nav-inner {
+    padding: 50px 15px;
+  }
+
+  .sns-nav-inner__btn {
+    display: block;
+    width: auto;
+    margin: 0 auto;
+  }
+}
