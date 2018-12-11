@@ -15,6 +15,12 @@ a {
   text-decoration: none;
 }
 
+.wrapper {
+  width: 1100px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
 .body {
   background-color: #f2f2f2;
   color: #333;
@@ -30,8 +36,6 @@ a {
 }
 
 .header-inner{
-  width: 1100px;
-  margin: 0 auto;
   padding: 15px;
   box-sizing: border-box;
 }
@@ -60,10 +64,7 @@ a {
 }
 
 .title-inner {
-  width: 1100px;
-  margin: 0 auto;
   padding: 250px 0;
-  box-sizing: border-box;
   text-align: center;
 }
 
@@ -86,10 +87,7 @@ a {
 }
 
 .service-inner {
-  width: 1100px;
-  margin: 0 auto;
   padding: 50px 0 0 100px;
-  box-sizing: border-box;
 }
 
 .service-image {
@@ -114,10 +112,7 @@ a {
 }
 
 .works-inner {
-  width: 1100px;
-  margin: 0 auto;
   padding: 60px 0 70px;
-  box-sizing: border-box;
   text-align: center;
 }
 
@@ -133,12 +128,6 @@ a {
 .works-wrapper__work {
   float: left;
   margin: 80px 0 0 100px;
-  opacity: 0.7;
-  transition: 0.3s;
-}
-
-.works-wrapper__work:hover {
-  opacity: 1;
 }
 
 .works-wrapper__work:nth-child(-n+3) {
@@ -147,6 +136,15 @@ a {
 
 .works-wrapper__work:nth-child(3n-2) {
   margin-left: 0;
+}
+
+.works-wrapper__work__link {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.works-wrapper__work__link:hover {
+  opacity: 1;
 }
 
 .work-request {
@@ -184,10 +182,7 @@ a {
 }
 
 .skills-inner {
-  width: 1100px;
-  margin: 0 auto;
   padding: 70px 0 100px;
-  box-sizing: border-box;
   text-align: center;
 }
 
@@ -214,11 +209,11 @@ a {
 }
 
 .sns-nav-container {
-  padding: 200px 0;
   text-align: center;
 }
 
 .sns-nav-inner {
+  padding: 200px 0;
   letter-spacing: -1em;
 }
 
@@ -240,10 +235,7 @@ a {
 }
 
 .footer-inner {
-  width: 1100px;
-  margin: 0 auto;
   padding: 20px 0 25px;
-  box-sizing: border-box;
   text-align: right;
 }
 
