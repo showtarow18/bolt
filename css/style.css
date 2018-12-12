@@ -82,7 +82,7 @@ a {
 }
 
 .main {
-  margin-top: 94px;
+  margin-top: 78px;
 }
 
 .title-inner {
@@ -242,6 +242,7 @@ a {
 .sns-nav-inner__btn {
   width: 185px;
   padding: 20px;
+  box-sizing: border-box;
   color: #74cfae;
   letter-spacing: 0;
   transition: 0.3s;
@@ -295,6 +296,11 @@ a {
     margin-top: 80px; 
   }
 
+  .works-wrapper__work:first-child {
+    margin-top: 0; 
+  }
+
+
   .work-request {
     margin-top: 80px;
   }
@@ -316,6 +322,10 @@ a {
 
   .skills-list:first-child {
     margin-top: 0;
+  }
+
+  .sns-nav-inner__btn {
+    width: 25%;
   }
 
 }
@@ -364,7 +374,7 @@ a {
   }
 
   .sns-nav-inner {
-    padding: 50px 15px;
+    padding: 50px 0;
   }
 
   .sns-nav-inner__btn {
