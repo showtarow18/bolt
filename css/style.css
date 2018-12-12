@@ -324,10 +324,6 @@ a {
     margin-top: 0;
   }
 
-  .sns-nav-inner__btn {
-    width: 25%;
-  }
-
 }
 
 @media screen and (max-width: 766px) {
